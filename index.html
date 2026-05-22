@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whyte Sharp Independent | A Wealth of Financial Expertise | St Andrews</title>
+<meta name="description" content="Whyte Sharp Independent LLP. Directly FCA-authorised independent financial advisers in St Andrews, advising clients across Scotland since 1997.">
+<style>
+:root{
+  --navy:#16294a;
+  --navy-deep:#0f1d36;
+  --navy-mid:#26406a;
+  --gold:#b08d4f;
+  --gold-soft:#c9a86a;
+  --ink:#1d2433;
+  --slate:#4a5568;
+  --mist:#eef1f6;
+  --paper:#f7f9fc;
+  --line:#dde3ec;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,nav,.btn,.eyebrow,.stat-num,.label{font-family:'Helvetica Neue',Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px}
+
+/* NAV */
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;flex-direction:column;line-height:1.1}
+.brand .mark{font-family:Georgia,serif;font-size:1.42rem;font-weight:700;color:var(--navy);letter-spacing:.01em}
+.brand .mark span{color:var(--gold)}
+.brand .sub{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--slate);margin-top:3px}
+.navlinks{display:flex;gap:30px;align-items:center}
+.navlinks a{font-size:.86rem;font-weight:500;color:var(--ink);letter-spacing:.02em}
+.navlinks a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--navy);color:var(--white);padding:13px 26px;border-radius:3px;font-size:.84rem;font-weight:600;letter-spacing:.04em;transition:.2s;border:1px solid var(--navy)}
+.btn:hover{background:var(--gold);border-color:var(--gold)}
+.btn-ghost{background:transparent;color:var(--navy)}
+.btn-ghost:hover{background:var(--navy);color:var(--white)}
+.menu-toggle{display:none;background:none;border:0;font-size:1.6rem;color:var(--navy);cursor:pointer}
+
+/* HERO */
+.hero{position:relative;background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 55%,var(--navy-mid) 100%);color:var(--white);overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-80px;width:520px;height:520px;border:1px solid rgba(176,141,79,.22);border-radius:50%}
+.hero::before{content:"";position:absolute;right:30px;bottom:-160px;width:360px;height:360px;border:1px solid rgba(176,141,79,.14);border-radius:50%}
+.hero .wrap{position:relative;z-index:2;padding:96px 24px 104px;max-width:840px}
+.hero .eyebrow{color:var(--gold-soft)}
+.hero h1{font-size:3.35rem;line-height:1.12;font-weight:700;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero p.lede{font-size:1.18rem;color:#cdd6e6;margin:24px 0 36px;max-width:640px}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.hero-cta .btn{background:var(--gold);border-color:var(--gold)}
+.hero-cta .btn:hover{background:var(--white);color:var(--navy);border-color:var(--white)}
+.hero-cta .btn-line{background:transparent;border:1px solid rgba(255,255,255,.4);color:#fff}
+.hero-cta .btn-line:hover{border-color:var(--gold-soft);color:var(--gold-soft)}
+.trust-row{display:flex;gap:36px;margin-top:52px;flex-wrap:wrap}
+.trust-row .ti{display:flex;flex-direction:column}
+.trust-row .ti .stat-num{font-size:2rem;font-weight:700;color:var(--gold-soft)}
+.trust-row .ti .label{font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:#a9b6cc;margin-top:4px}
+
+/* SECTION SHELL */
+section{padding:88px 0}
+.section-head{max-width:680px;margin-bottom:54px}
+.section-head h2{font-size:2.4rem;color:var(--navy);line-height:1.15;font-weight:700}
+.section-head p{color:var(--slate);font-size:1.08rem;margin-top:16px}
+.bg-mist{background:var(--paper)}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:34px 30px;transition:.22s}
+.bg-mist .svc{background:var(--white)}
+.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,41,74,.1);border-color:transparent}
+.svc .ico{width:54px;height:54px;margin-bottom:20px}
+.svc h3{font-size:1.22rem;color:var(--navy);margin-bottom:10px;font-weight:700}
+.svc p{font-size:.97rem;color:var(--slate)}
+
+/* INDEPENDENCE / WATSON STORY */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.split .copy h2{font-size:2.3rem;color:var(--navy);line-height:1.16;font-weight:700;margin-bottom:20px}
+.split .copy p{color:var(--slate);font-size:1.05rem;margin-bottom:16px}
+.feat-list{list-style:none;margin-top:24px}
+.feat-list li{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px;font-size:1rem;color:var(--ink)}
+.feat-list .chk{flex:0 0 24px;width:24px;height:24px;margin-top:2px}
+.indep-card{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);color:#fff;border-radius:10px;padding:42px 38px;position:relative;overflow:hidden}
+.indep-card::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border:1px solid rgba(176,141,79,.25);border-radius:50%}
+.indep-card .badge{display:inline-flex;align-items:center;gap:10px;background:rgba(176,141,79,.16);border:1px solid rgba(176,141,79,.4);color:var(--gold-soft);padding:8px 16px;border-radius:30px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:24px}
+.indep-card h3{font-size:1.5rem;margin-bottom:14px;color:#fff;position:relative;z-index:2}
+.indep-card p{color:#c6d0e2;font-size:1rem;position:relative;z-index:2}
+.indep-card .ref{margin-top:24px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-family:'Helvetica Neue',Arial,sans-serif;font-size:.82rem;color:#9fb0cc;position:relative;z-index:2}
+.indep-card .ref strong{color:var(--gold-soft)}
+
+/* TEAM */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.member{background:var(--white);border:1px solid var(--line);border-radius:8px;overflow:hidden;text-align:center;transition:.2s}
+.member:hover{box-shadow:0 14px 34px rgba(22,41,74,.1)}
+.monogram{height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(140deg,var(--navy) 0%,var(--navy-mid) 100%);position:relative}
+.monogram span{font-family:Georgia,serif;font-size:3.4rem;font-weight:700;color:var(--gold-soft);letter-spacing:.04em}
+.monogram::after{content:"";position:absolute;inset:14px;border:1px solid rgba(176,141,79,.3);border-radius:6px}
+.member .info{padding:24px 22px 28px}
+.member .info h3{font-size:1.18rem;color:var(--navy);font-weight:700}
+.member .info .role{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:7px 0 12px;font-weight:600}
+.member .info p{font-size:.93rem;color:var(--slate)}
+
+/* PROCESS */
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
+.step{position:relative;padding:30px 24px;background:var(--white);border:1px solid var(--line);border-radius:6px}
+.bg-mist .step{background:var(--white)}
+.step .num{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.9rem;font-weight:700;color:var(--white);background:var(--gold);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.step h3{font-size:1.12rem;color:var(--navy);margin-bottom:9px;font-weight:700}
+.step p{font-size:.93rem;color:var(--slate)}
+
+/* CONTACT */
+.contact{background:var(--navy-deep);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact .eyebrow{color:var(--gold-soft)}
+.contact h2{font-size:2.3rem;color:#fff;font-weight:700;line-height:1.15}
+.contact p.lede{color:#c6d0e2;font-size:1.06rem;margin:16px 0 32px}
+.cdetail{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px}
+.cdetail .ci{flex:0 0 42px;width:42px;height:42px;background:rgba(176,141,79,.14);border:1px solid rgba(176,141,79,.34);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.cdetail .ci svg{width:20px;height:20px}
+.cdetail .ctext .label{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#9fb0cc;margin-bottom:3px}
+.cdetail .ctext a,.cdetail .ctext span{color:#fff;font-size:1.02rem}
+.cdetail .ctext a:hover{color:var(--gold-soft)}
+.form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:34px}
+.form h3{font-family:'Helvetica Neue',Arial,sans-serif;font-size:1.1rem;color:#fff;margin-bottom:22px;font-weight:600}
+.field{margin-bottom:18px}
+.field label{display:block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.78rem;letter-spacing:.06em;color:#a9b6cc;margin-bottom:7px;text-transform:uppercase}
+.field input,.field textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:5px;padding:12px 14px;color:#fff;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.95rem}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold-soft)}
+.form .btn{width:100%;background:var(--gold);border-color:var(--gold);margin-top:6px;cursor:pointer}
+.form .btn:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
+.form .formnote{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.74rem;color:#8595b0;margin-top:14px;text-align:center}
+
+/* FOOTER */
+footer{background:#0b1729;color:#8fa0bc;padding:54px 0 30px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.86rem;line-height:1.7}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.08)}
+.foot-top .mark{font-family:Georgia,serif;font-size:1.3rem;color:#fff;font-weight:700;margin-bottom:14px}
+.foot-top .mark span{color:var(--gold-soft)}
+.foot-top h4{color:#fff;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.foot-top a{display:block;margin-bottom:8px}
+.foot-top a:hover{color:var(--gold-soft)}
+.legal{padding-top:26px;font-size:.78rem;color:#6b7d9b}
+.legal p{margin-bottom:10px;max-width:920px}
+.legal .reg strong{color:#aab8d0}
+.demo-flag{margin-top:18px;padding:12px 16px;background:rgba(176,141,79,.08);border:1px solid rgba(176,141,79,.2);border-radius:6px;color:#b9c6dd;font-size:.78rem}
+.demo-flag a{color:var(--gold-soft);text-decoration:underline}
+
+@media(max-width:920px){
+  .svc-grid,.team-grid,.proc-grid{grid-template-columns:1fr 1fr}
+  .split,.contact .wrap,.foot-top{grid-template-columns:1fr;gap:38px}
+  .hero h1{font-size:2.5rem}
+}
+@media(max-width:620px){
+  .navlinks{display:none}
+  .menu-toggle{display:block}
+  .svc-grid,.team-grid,.proc-grid{grid-template-columns:1fr}
+  .hero h1{font-size:2.1rem}
+  .hero .wrap{padding:64px 24px 72px}
+  section{padding:62px 0}
+  .section-head h2,.split .copy h2,.contact h2{font-size:1.9rem}
+  .trust-row{gap:26px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <span class="mark">Whyte<span>Sharp</span></span>
+      <span class="sub">Independent &middot; St Andrews</span>
+    </a>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#independence">Independence</a>
+      <a href="#team">Our Team</a>
+      <a href="#process">How We Work</a>
+      <a href="#contact" class="btn">Arrange a Conversation</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Directly FCA-Authorised &middot; Established 1997</p>
+    <h1>A Wealth of Financial Expertise, <em>built across two generations</em></h1>
+    <p class="lede">Whyte Sharp Independent has advised individuals and businesses across Scotland since 1997. As a directly authorised independent practice, we are free to search the whole of the market and recommend what genuinely suits you.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn">Arrange a Conversation</a>
+      <a href="#independence" class="btn-line btn">Why Independence Matters</a>
+    </div>
+    <div class="trust-row">
+      <div class="ti"><span class="stat-num">1997</span><span class="label">Advising Since</span></div>
+      <div class="ti"><span class="stat-num">Direct</span><span class="label">FCA Authorisation</span></div>
+      <div class="ti"><span class="stat-num">Whole</span><span class="label">Of-Market Access</span></div>
+      <div class="ti"><span class="stat-num">St&nbsp;Andrews</span><span class="label">Based in Fife</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What We Advise On</p>
+      <h2>Independent advice across every stage of your financial life</h2>
+      <p>From planning for retirement to passing wealth on to the next generation, our advice is tailored to your circumstances and reviewed as your life changes.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none">
+          <rect x="5" y="6" width="38" height="36" rx="3" fill="#dfe4ee"/>
+          <rect x="5" y="6" width="38" height="36" rx="3" stroke="#16294a" stroke-width="2"/>
+          <path d="M11 33l8-9 6 5 12-15" stroke="#16294a" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M37 14h-7m7 0v7" stroke="#b08d4f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="19" cy="24" r="2.4" fill="#b08d4f"/>
+          <circle cx="25" cy="29" r="2.4" fill="#b08d4f"/>
+        </svg>
+        <h3>Investments</h3>
+        <p>Portfolios constructed and reviewed against your goals, time horizon and attitude to risk, using the whole of the market rather than a single provider's range.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none">
+          <ellipse cx="24" cy="34" rx="16" ry="9" fill="#dfe4ee" stroke="#16294a" stroke-width="2"/>
+          <path d="M14 30c0-7 4.5-12 10-12s10 5 10 12" stroke="#16294a" stroke-width="2" fill="none"/>
+          <circle cx="24" cy="20" r="6" fill="#b08d4f"/>
+          <path d="M24 17v6M21 20h6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+          <ellipse cx="24" cy="34" rx="9" ry="4.5" fill="#16294a" opacity=".12"/>
+        </svg>
+        <h3>Pensions &amp; Retirement</h3>
+        <p>Planning for the income you will need later and reviewing existing pensions, so you understand your options well before you reach retirement.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none">
+          <path d="M24 5l15 5v11c0 9-6.4 16-15 19-8.6-3-15-10-15-19V10l15-5z" fill="#dfe4ee" stroke="#16294a" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M24 9l11 3.6v8.4c0 6.8-4.7 11.8-11 14.2-6.3-2.4-11-7.4-11-14.2V12.6L24 9z" fill="#16294a"/>
+          <path d="M18 24l4 4 8-9" stroke="#b08d4f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Protection</h3>
+        <p>Life assurance and business protection arranged to suit your family or company, helping safeguard the people and plans that depend on you.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none">
+          <path d="M8 22L24 9l16 13v18a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V22z" fill="#dfe4ee" stroke="#16294a" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M8 22L24 9l16 13" stroke="#16294a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="18" y="26" width="12" height="16" fill="#16294a"/>
+          <rect x="29" y="13" width="9" height="12" rx="1" fill="#fff" stroke="#b08d4f" stroke-width="1.8"/>
+          <path d="M31 17h5M31 20h5" stroke="#b08d4f" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <h3>Inheritance Tax &amp; Estate Planning</h3>
+        <p>Structuring your estate so that more of what you have built can pass to the people and causes you choose, in line with current rules.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="18" fill="#dfe4ee" stroke="#16294a" stroke-width="2"/>
+          <circle cx="24" cy="24" r="3.4" fill="#16294a"/>
+          <path d="M24 24l9-13-5 16-13 5 16-5z" fill="#b08d4f"/>
+          <path d="M24 7v4M24 37v4M7 24h4M37 24h4" stroke="#16294a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3>Financial Planning</h3>
+        <p>A clear, written plan that brings your savings, investments, pensions and protection together, then keeps them aligned as your circumstances change.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none">
+          <rect x="9" y="14" width="30" height="22" rx="3" fill="#dfe4ee" stroke="#16294a" stroke-width="2"/>
+          <path d="M9 21h30" stroke="#16294a" stroke-width="2"/>
+          <rect x="14" y="9" width="20" height="6" rx="2" fill="#16294a"/>
+          <circle cx="24" cy="29" r="4.4" fill="#b08d4f"/>
+          <path d="M24 27v4M22.2 29h3.6" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <h3>Savings</h3>
+        <p>Advice on tax-efficient ways to put money aside for shorter and longer term goals, reviewed as allowances and your plans evolve.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INDEPENDENCE + WATSON STORY -->
+<section class="bg-mist" id="independence">
+  <div class="wrap split">
+    <div class="copy">
+      <p class="eyebrow">Genuinely Independent</p>
+      <h2>A father and son practice, answerable only to its clients</h2>
+      <p>Whyte Sharp Independent is directly authorised by the Financial Conduct Authority. We are not an appointed representative of a national network and we are not tied to any single provider's products. That independence means our recommendations start with you, not with a panel we have been asked to sell from.</p>
+      <p>David Watson has been a partner since the firm's beginning in 1997. His son Kyle joined as a partner in 2020, bringing the practice into its second generation while the same standards of service carry through.</p>
+      <ul class="feat-list">
+        <li><svg class="chk" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#16294a"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#c9a86a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Directly FCA-authorised, not a network appointed representative</li>
+        <li><svg class="chk" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#16294a"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#c9a86a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Whole-of-market research across providers</li>
+        <li><svg class="chk" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#16294a"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#c9a86a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Two generations of the Watson family, one consistent standard</li>
+        <li><svg class="chk" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#16294a"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#c9a86a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Long-term relationships, with plans reviewed as your life changes</li>
+      </ul>
+    </div>
+    <div class="indep-card">
+      <span class="badge">Tried &amp; Trusted Since 1997</span>
+      <h3>Independence you can verify</h3>
+      <p>You can confirm our regulatory status for yourself. Whyte Sharp Independent LLP is listed on the Financial Conduct Authority's public register, where our permissions and history are openly recorded.</p>
+      <div class="ref"><strong>FCA Firm Reference:</strong> 223496<br>Directly authorised &middot; Independent advice</div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The People Behind the Advice</p>
+      <h2>Partners and a support team who know you by name</h2>
+      <p>Continuity matters in financial advice. Many of our clients have worked with the same people for years, which is part of how we build long term relationships.</p>
+    </div>
+    <div class="team-grid">
+
+      <div class="member">
+        <div class="monogram"><span>DW</span></div>
+        <div class="info">
+          <h3>David Watson</h3>
+          <div class="role">Partner since 1997</div>
+          <p>Founding partner with earlier experience at Prudential, focused on building long term relationships with his clients.</p>
+        </div>
+      </div>
+
+      <div class="member">
+        <div class="monogram"><span>KW</span></div>
+        <div class="info">
+          <h3>Kyle Watson</h3>
+          <div class="role">Partner since 2020</div>
+          <p>Second-generation partner with a background in financial services including BlackRock and Prudential, focused on pensions and investments.</p>
+        </div>
+      </div>
+
+      <div class="member">
+        <div class="monogram"><span>AP</span></div>
+        <div class="info">
+          <h3>Alastair Pascall</h3>
+          <div class="role">Partner</div>
+          <p>Partner with experience at Scottish Widows and Prudential, who emphasises ongoing reviews to keep each plan suitable over time.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="bg-mist" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How We Work</p>
+      <h2>A considered, four-step approach</h2>
+      <p>Independent advice is a relationship, not a single transaction. Here is how a conversation with us typically unfolds.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Get Acquainted</h3>
+        <p>We start with an unhurried conversation about your circumstances, your plans and what you would like your money to do.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Research the Market</h3>
+        <p>As an independent firm we research across the whole of the market to find what genuinely fits, rather than a fixed panel.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Set Out a Plan</h3>
+        <p>You receive a clear, written plan explaining what we recommend and the reasoning behind each part of it.</p>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <h3>Review Together</h3>
+        <p>We meet regularly to review your plan, adjusting it as allowances, markets and your own circumstances change.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Arrange a Conversation</p>
+      <h2>Come and see us on South Street</h2>
+      <p class="lede">If you would value a conversation with a directly authorised independent adviser, we would be glad to hear from you. There is no obligation in an initial discussion.</p>
+
+      <div class="cdetail">
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" fill="#c9a86a"/><circle cx="12" cy="9" r="2.6" fill="#0f1d36"/></svg></div>
+        <div class="ctext"><div class="label">Office</div><span>104 South Street, St Andrews, Fife, KY16 9QD</span></div>
+      </div>
+      <div class="cdetail">
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a13 13 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z" fill="#c9a86a"/></svg></div>
+        <div class="ctext"><div class="label">Telephone</div><a href="tel:01334470999">01334 470999</a></div>
+      </div>
+      <div class="cdetail">
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" fill="#c9a86a"/><path d="M4 6l8 6 8-6" stroke="#0f1d36" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="ctext"><div class="label">Email</div><a href="mailto:info@whytesharp.co.uk">info@whytesharp.co.uk</a></div>
+      </div>
+    </div>
+
+    <div class="form">
+      <h3>Request a call back</h3>
+      <div class="field"><label>Name</label><input type="text" placeholder="Your name"></div>
+      <div class="field"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+      <div class="field"><label>Telephone</label><input type="tel" placeholder="Best number to reach you"></div>
+      <div class="field"><label>How can we help?</label><textarea rows="3" placeholder="A few words about what you would like to discuss"></textarea></div>
+      <button class="btn" type="button">Send Enquiry</button>
+      <p class="formnote">Form is illustrative in this concept. Please use the telephone or email details to reach the firm directly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark">Whyte<span>Sharp</span> Independent</div>
+        <p>Independent financial advisers in St Andrews, advising individuals and businesses across Scotland since 1997.</p>
+      </div>
+      <div>
+        <h4>Advice</h4>
+        <a href="#services">Investments</a>
+        <a href="#services">Pensions &amp; Retirement</a>
+        <a href="#services">Inheritance Tax &amp; Estate</a>
+        <a href="#services">Protection</a>
+      </div>
+      <div>
+        <h4>Firm</h4>
+        <a href="#independence">Independence</a>
+        <a href="#team">Our Team</a>
+        <a href="#process">How We Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p class="reg"><strong>Whyte Sharp Independent LLP</strong> is authorised and regulated by the Financial Conduct Authority. FCA Firm Reference Number: 223496. Registered office: 104 South Street, St Andrews, KY16 9QD.</p>
+      <p>The value of investments and the income from them can fall as well as rise, and you may get back less than you invested. Tax treatment depends on individual circumstances and may change in the future. This page describes the nature of the firm's services and is not advice or a recommendation.</p>
+      <div class="demo-flag">
+        This is a demo concept, not the live Whyte Sharp Independent website. Concept by <a href="https://andrei170.github.io/ag1/#services" target="_blank" rel="noopener">AG Consulting</a>.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":["FinancialService","LocalBusiness"],
+  "name":"Whyte Sharp Independent LLP",
+  "description":"Directly FCA-authorised independent financial advisers in St Andrews, advising individuals and businesses across Scotland since 1997.",
+  "url":"https://www.whytesharp.co.uk/",
+  "telephone":"+441334470999",
+  "email":"info@whytesharp.co.uk",
+  "foundingDate":"1997",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"104 South Street",
+    "addressLocality":"St Andrews",
+    "addressRegion":"Fife",
+    "postalCode":"KY16 9QD",
+    "addressCountry":"GB"
+  },
+  "areaServed":"Scotland",
+  "identifier":{"@type":"PropertyValue","name":"FCA Firm Reference Number","value":"223496"},
+  "employee":[
+    {"@type":"Person","name":"David Watson","jobTitle":"Partner","worksFor":"Whyte Sharp Independent LLP"},
+    {"@type":"Person","name":"Kyle Watson","jobTitle":"Partner","worksFor":"Whyte Sharp Independent LLP"}
+  ],
+  "knowsAbout":["Financial Planning","Pensions and Retirement","Investments","Inheritance Tax Planning","Estate Planning","Protection"]
+}
+</script>
+
+<script>
+document.querySelector('.menu-toggle').addEventListener('click',function(){
+  var n=document.querySelector('.navlinks');
+  n.style.display=(n.style.display==='flex')?'none':'flex';
+  n.style.flexDirection='column';n.style.position='absolute';n.style.top='78px';n.style.right='0';
+  n.style.background='#fff';n.style.padding='20px 24px';n.style.boxShadow='0 12px 30px rgba(0,0,0,.12)';n.style.width='100%';
+});
+</script>
+
+</body>
+</html>
