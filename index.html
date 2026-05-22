@@ -136,6 +136,21 @@ section{padding:88px 0}
 .form .btn:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
 .form .formnote{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.74rem;color:#8595b0;margin-top:14px;text-align:center}
 
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr;gap:14px;max-width:880px}
+.faq{background:var(--white);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.bg-mist .faq{background:var(--white)}
+.faq summary{font-family:'Helvetica Neue',Arial,sans-serif;font-size:1.04rem;font-weight:600;color:var(--navy);padding:22px 26px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:18px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5rem;color:var(--gold);font-weight:400;line-height:1;transition:.2s}
+.faq[open] summary::after{content:"\2212"}
+.faq summary:hover{color:var(--gold)}
+.faq .answer{padding:0 26px 24px;color:var(--slate);font-size:1rem;line-height:1.7}
+
+/* MAP */
+.map-embed{margin-top:30px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.14);position:relative;padding-bottom:62%;height:0}
+.map-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
 /* FOOTER */
 footer{background:#0b1729;color:#8fa0bc;padding:54px 0 30px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.86rem;line-height:1.7}
 .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.08)}
@@ -181,6 +196,7 @@ footer{background:#0b1729;color:#8fa0bc;padding:54px 0 30px;font-family:'Helveti
       <a href="#independence">Independence</a>
       <a href="#team">Our Team</a>
       <a href="#process">How We Work</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact" class="btn">Arrange a Conversation</a>
     </nav>
     <button class="menu-toggle" aria-label="Menu">&#9776;</button>
@@ -388,6 +404,55 @@ footer{background:#0b1729;color:#8fa0bc;padding:54px 0 30px;font-family:'Helveti
   </div>
 </section>
 
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Common Questions</p>
+      <h2>Questions people often ask before getting in touch</h2>
+      <p>A few of the things prospective clients tend to ask us about how we work and how we are regulated.</p>
+    </div>
+    <div class="faq-grid">
+
+      <details class="faq">
+        <summary>What does independent, whole-of-market advice mean?</summary>
+        <div class="answer">It means we are not tied to any single provider and we are not part of a national network such as St. James's Place. We are directly authorised by the Financial Conduct Authority, so when we research the market we can consider products and providers across the whole of the market rather than a restricted panel. The aim is to recommend what suits your circumstances.</div>
+      </details>
+
+      <details class="faq">
+        <summary>What is the difference between independent and restricted advice?</summary>
+        <div class="answer">Restricted advice looks at a limited range of products or providers, often a single company's range or a network's panel. Independent advice considers the relevant products available across the whole of the market. As an independent firm, our recommendations are not limited to one provider's offering, and we explain the basis of any recommendation in writing.</div>
+      </details>
+
+      <details class="faq">
+        <summary>Do you advise on pensions, retirement and inheritance-tax planning?</summary>
+        <div class="answer">Yes. We advise on pensions and retirement planning, investments, protection, savings, and inheritance-tax and estate planning. We can also review pensions and arrangements you already hold so you understand your options. Tax treatment depends on your individual circumstances and the rules in place at the time, and may change in future.</div>
+      </details>
+
+      <details class="faq">
+        <summary>How does a first meeting work?</summary>
+        <div class="answer">We start with an unhurried conversation about your circumstances, your plans and what you would like your money to do. There is no obligation in that initial discussion. If you decide to go ahead, we research the market and set out a clear, written plan explaining what we recommend and the reasoning behind it.</div>
+      </details>
+
+      <details class="faq">
+        <summary>Are you regulated?</summary>
+        <div class="answer">Yes. Whyte Sharp Independent LLP is authorised and regulated by the Financial Conduct Authority, under FCA Firm Reference Number 223496. You can confirm our status and permissions for yourself on the FCA's public register.</div>
+      </details>
+
+      <details class="faq">
+        <summary>What areas and clients do you serve?</summary>
+        <div class="answer">We are based at 104 South Street in St Andrews, Fife, and advise individuals and businesses across Scotland. Many of our clients have worked with the same people at the firm for years, which is part of how we build long-term relationships and review plans as circumstances change.</div>
+      </details>
+
+      <details class="faq">
+        <summary>Will my plan be reviewed after the initial advice?</summary>
+        <div class="answer">Yes. We see advice as an ongoing relationship rather than a single transaction. We meet regularly to review your plan and adjust it as allowances, markets and your own circumstances change. The value of investments and the income from them can fall as well as rise, so reviewing your plan over time is part of how we work.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="wrap">
@@ -402,11 +467,15 @@ footer{background:#0b1729;color:#8fa0bc;padding:54px 0 30px;font-family:'Helveti
       </div>
       <div class="cdetail">
         <div class="ci"><svg viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a13 13 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z" fill="#c9a86a"/></svg></div>
-        <div class="ctext"><div class="label">Telephone</div><a href="tel:01334470999">01334 470999</a></div>
+        <div class="ctext"><div class="label">Telephone</div><a href="tel:+441334470999">01334 470999</a></div>
       </div>
       <div class="cdetail">
         <div class="ci"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" fill="#c9a86a"/><path d="M4 6l8 6 8-6" stroke="#0f1d36" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="ctext"><div class="label">Email</div><a href="mailto:info@whytesharp.co.uk">info@whytesharp.co.uk</a></div>
+      </div>
+
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=104+South+Street+St+Andrews+KY16+9QD&output=embed" loading="lazy" title="Whyte Sharp Independent location" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
@@ -481,6 +550,51 @@ footer{background:#0b1729;color:#8fa0bc;padding:54px 0 30px;font-family:'Helveti
     {"@type":"Person","name":"Kyle Watson","jobTitle":"Partner","worksFor":"Whyte Sharp Independent LLP"}
   ],
   "knowsAbout":["Financial Planning","Pensions and Retirement","Investments","Inheritance Tax Planning","Estate Planning","Protection"]
+}
+</script>
+
+<!-- FAQ JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"What does independent, whole-of-market advice mean?",
+      "acceptedAnswer":{"@type":"Answer","text":"It means we are not tied to any single provider and we are not part of a national network such as St. James's Place. We are directly authorised by the Financial Conduct Authority, so when we research the market we can consider products and providers across the whole of the market rather than a restricted panel. The aim is to recommend what suits your circumstances."}
+    },
+    {
+      "@type":"Question",
+      "name":"What is the difference between independent and restricted advice?",
+      "acceptedAnswer":{"@type":"Answer","text":"Restricted advice looks at a limited range of products or providers, often a single company's range or a network's panel. Independent advice considers the relevant products available across the whole of the market. As an independent firm, our recommendations are not limited to one provider's offering, and we explain the basis of any recommendation in writing."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you advise on pensions, retirement and inheritance-tax planning?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. We advise on pensions and retirement planning, investments, protection, savings, and inheritance-tax and estate planning. We can also review pensions and arrangements you already hold so you understand your options. Tax treatment depends on your individual circumstances and the rules in place at the time, and may change in future."}
+    },
+    {
+      "@type":"Question",
+      "name":"How does a first meeting work?",
+      "acceptedAnswer":{"@type":"Answer","text":"We start with an unhurried conversation about your circumstances, your plans and what you would like your money to do. There is no obligation in that initial discussion. If you decide to go ahead, we research the market and set out a clear, written plan explaining what we recommend and the reasoning behind it."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are you regulated?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. Whyte Sharp Independent LLP is authorised and regulated by the Financial Conduct Authority, under FCA Firm Reference Number 223496. You can confirm our status and permissions for yourself on the FCA's public register."}
+    },
+    {
+      "@type":"Question",
+      "name":"What areas and clients do you serve?",
+      "acceptedAnswer":{"@type":"Answer","text":"We are based at 104 South Street in St Andrews, Fife, and advise individuals and businesses across Scotland. Many of our clients have worked with the same people at the firm for years, which is part of how we build long-term relationships and review plans as circumstances change."}
+    },
+    {
+      "@type":"Question",
+      "name":"Will my plan be reviewed after the initial advice?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. We see advice as an ongoing relationship rather than a single transaction. We meet regularly to review your plan and adjust it as allowances, markets and your own circumstances change. The value of investments and the income from them can fall as well as rise, so reviewing your plan over time is part of how we work."}
+    }
+  ]
 }
 </script>
 
